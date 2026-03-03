@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Anusha 🎂</title>
+
+<style>
+:root{
+  --bg1:#fff0f6;
+  --bg2:#f3e8ff;
+  --bg3:#ffe0f0;
+  --text:#5c3a4a;
+  --card:#ffffffee;
+}
+
+body.dark{
+  --bg1:#1a1625;
+  --bg2:#2a1e3a;
+  --bg3:#3a1e2f;
+  --text:#ffd9ec;
+  --card:#2b233aee;
+}
+
+body{
+  margin:0;
+  height:100vh;
+  overflow:hidden;
+  font-family:"Comic Sans MS", cursive;
+  color:var(--text);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(-45deg,var(--bg1),var(--bg2),var(--bg3));
+  background-size:400% 400%;
+  animation:bgMove 15s infinite alternate;
+}
+
+@keyframes bgMove{
+  0%{background-position:0% 50%;}
+  100%{background-position:100% 50%;}
+}
+
+.toggle{
+  position:fixed;
+  top:15px;
+  right:15px;
+  font-size:22px;
+  cursor:pointer;
+  background:var(--card);
+  padding:8px 12px;
+  border-radius:20px;
+  z-index:10;
+}
+
+/* Gift container with slow zoom */
+#giftWrapper{
+  animation:slowZoom 4s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom{
+  from{transform:scale(1);}
+  to{transform:scale(1.08);}
+}
+
+#gift{
+  text-align:center;
+  cursor:pointer;
+  animation:glow 2s infinite alternate;
+}
+
+.box{
+  font-size:110px;
+  animation:bounce 2s infinite;
+}
+
+.note{
+  font-size:22px;
+}
+
+@keyframes glow{
+  from{filter:drop-shadow(0 0 10px #ff9ecd);}
+  to{filter:drop-shadow(0 0 35px #ff4fa3);}
+}
+
+@keyframes bounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+}
+
+/* Card */
+#card{
+  display:none;
+  width:90%;
+  max-width:750px;
+  height:85vh;
+  overflow-y:auto;
+  padding:40px;
+  border-radius:35px;
+  background:var(--card);
+  backdrop-filter:blur(20px);
+  box-shadow:0 15px 60px #ff9ecd55;
+  animation:fadeIn 1.2s ease forwards;
+  position:relative;
+  z-index:5;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:scale(.9);}
+  to{opacity:1;transform:scale(1);}
+}
+
+h1{
+  font-size:42px;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.date{
+  text-align:center;
+  margin-bottom:25px;
+  font-size:18px;
+}
+
+p{
+  font-size:18px;
+  line-height:1.9;
+  white-space:pre-line;
+}
+
+/* Background floating elements (behind card only) */
+.bgFloat{
+  position:fixed;
+  bottom:-50px;
+  font-size:26px;
+  opacity:0.6;
+  z-index:0;
+  animation:rise linear forwards;
+}
+
+@keyframes rise{
+  to{
+    transform:translateY(-120vh);
+    opacity:0;
+  }
+}
+
+/* Particle explosion */
+.particle{
+  position:fixed;
+  font-size:20px;
+  pointer-events:none;
+}
+
+button{
+  display:block;
+  margin:25px auto 10px auto;
+  padding:10px 20px;
+  border:none;
+  border-radius:25px;
+  font-size:16px;
+  cursor:pointer;
+  background:linear-gradient(45deg,#ff9ecd,#ffcce6);
+}
+</style>
+</head>
+
+<body>
+
+<div class="toggle" onclick="toggleTheme()">🌙</div>
+
+<div id="giftWrapper">
+  <div id="gift" onclick="openGift(event)">
+    <div class="box">🎁</div>
+    <div class="note">Tap to Open Birthday Magic 🎀</div>
+  </div>
+</div>
+
+<div id="card">
+  <h1>🎂 Happy Birthday 🎂</h1>
+  <div class="date">For Anusha 💗</div>
+  <div class="date">4 March 2026</div>
+
+  <p>Happyyyy Birthdayyyyy meri Rasmalaiiiii 🥹💗💗💗💗💗💋💋💋💋🎀🎀🎀
+
+Mera bacchaaaaa, meri babyyyy, aaj ka din honestly mere liye bhi special hai, kyunki iss din tum iss duniya mein aayi thi 🫶🏻✨ Aur tab se shayad duniya thodi zyada soft, thodi zyada emotional aur thodi zyada beautiful ho gayi 💖
+
+Tumhe pata hai? Tum sirf meri favorite person nahi ho. Tum mera comfort ho. Jab bhi life thodi heavy lagti hai, jab kisi ki baat dil pe lag jaati hai, jab negative thoughts bina reason ke dimag mein ghoomte rehte hain, tab tum hoti ho. Kabhi tum mujhe samjha leti ho, kabhi main tumhe. Kabhi tum chup ho jaati ho aur main feel kar leta hoon, kabhi main overthink karta hoon aur tum pakad leti ho. Aur mujhe ye cheez sabse zyada pasand hai ki chahe kitna bhi low phase ho, hum dono ek dusre ka haath chhodte nahi 🥹💗
+
+Hum dono overthinkers hain 😭 but at least hum akele overthink nahi karte. Tum meri baatein itne patience se sunti ho, bina judge kiye, bina irritate hue. Kabhi tumhara simple “hnnnn 🥺💗” bhi enough hota hai mujhe calm karne ke liye. Aur jab tum hurt hoti ho na, toh mujhe genuinely lagta hai ki mujhe tumhe protect karna chahiye duniya se 🫶🏻✨
+
+Tumhari awaaz mein ek alag hi sukoon hai. Aur tumhari aankhon mein woh softness hai jo har kisi mein nahi hoti. Tum emotional ho, par weak nahi ho. Tum sensitive ho, par strong bhi ho. Aur ye combination honestly rare hota hai 💖🎀 Mujhe tum par bohot proud feel hota hai, chahe tum realize karo ya nahi.
+
+Thank you for being there on my worst days. Thank you for trusting me with your tears, your overthinking, your random mood swings, your silly laughs. Thank you for letting me be your safe place, the way tum meri ho 💗✨
+
+Main bas itna chahta hoon ki tum hamesha khush raho, safe raho, aur kabhi apni value doubt mat karo. Tum jitna sochti ho usse kahin zyada special ho 🥹💖 Aur chahe life kitni bhi busy ho jaaye, kitni bhi change ho jaaye, ye yaad rakhna, mai hamesha tumhare sath hu. Always 🫶🏻✨
+
+Love youuuuuuuuuuu meri Rasmalaiiiii 💖💖💖💗💗💗💗💗💗💋💋💋💋💋💋💋
+Kha jaungaaaaa 😋😋😋🫦💗💖✨</p>
+
+  <button onclick="location.reload()">Open Again 🎀</button>
+</div>
+
+<script>
+function toggleTheme(){
+  document.body.classList.toggle("dark");
+}
+
+/* Background floating (behind card only) */
+setInterval(()=>{
+  if(document.getElementById("card").style.display !== "block") return;
+  let b=document.createElement("div");
+  b.className="bgFloat";
+  b.innerHTML=["🎈","✨","💗"][Math.random()*3|0];
+  b.style.left=Math.random()*100+"vw";
+  b.style.animationDuration=6+Math.random()*4+"s";
+  document.body.appendChild(b);
+  setTimeout(()=>b.remove(),10000);
+},700);
+
+/* Particle explosion */
+function explode(x,y){
+  for(let i=0;i<80;i++){
+    let p=document.createElement("div");
+    p.className="particle";
+    p.innerHTML=["✨","💖","🎀","💗"][Math.random()*4|0];
+    p.style.left=x+"px";
+    p.style.top=y+"px";
+    document.body.appendChild(p);
+
+    let angle=Math.random()*2*Math.PI;
+    let distance=100+Math.random()*150;
+    let dx=Math.cos(angle)*distance;
+    let dy=Math.sin(angle)*distance;
+
+    p.animate([
+      {transform:"translate(0,0)",opacity:1},
+      {transform:`translate(${dx}px,${dy}px)`,opacity:0}
+    ],{
+      duration:1000+Math.random()*500,
+      easing:"ease-out"
+    });
+
+    setTimeout(()=>p.remove(),1500);
+  }
+}
+
+function openGift(e){
+  let rect=e.target.getBoundingClientRect();
+  explode(rect.left+rect.width/2,rect.top+rect.height/2);
+  document.getElementById("giftWrapper").style.display="none";
+  setTimeout(()=>{
+    document.getElementById("card").style.display="block";
+  },600);
+}
+</script>
+
+</body>
+</html>
